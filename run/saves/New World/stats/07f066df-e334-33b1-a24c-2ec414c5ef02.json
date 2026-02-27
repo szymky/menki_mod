@@ -1,0 +1,42 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2373,
+      "minecraft:walk_one_cm": 674,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_dealt": 80,
+      "minecraft:play_time": 2373,
+      "minecraft:jump": 31,
+      "minecraft:time_since_death": 2373,
+      "minecraft:drop": 2,
+      "minecraft:interact_with_furnace": 1,
+      "minecraft:sprint_one_cm": 2217,
+      "minecraft:total_world_time": 2407,
+      "minecraft:fly_one_cm": 17317,
+      "minecraft:crouch_one_cm": 20,
+      "minecraft:sneak_time": 37
+    },
+    "minecraft:dropped": {
+      "minecraft:raw_iron": 1,
+      "minecraft:furnace": 1
+    },
+    "minecraft:killed": {
+      "minecraft:sheep": 1
+    },
+    "minecraft:used": {
+      "minecraft:furnace": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:iron_ingot": 1,
+      "minecraft:air": 0
+    },
+    "minecraft:picked_up": {
+      "minecraft:furnace": 1,
+      "menkimod:suspicious_substance": 62,
+      "minecraft:iron_ingot": 2,
+      "minecraft:raw_iron": 62
+    }
+  },
+  "DataVersion": 4671
+}

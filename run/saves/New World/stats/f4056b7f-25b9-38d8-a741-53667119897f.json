@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "menkimod:menki_ore": 7
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 117,
+      "minecraft:walk_one_cm": 79,
+      "minecraft:total_world_time": 163,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 457,
+      "minecraft:play_time": 117,
+      "minecraft:jump": 4,
+      "minecraft:time_since_death": 117
+    }
+  },
+  "DataVersion": 4671
+}

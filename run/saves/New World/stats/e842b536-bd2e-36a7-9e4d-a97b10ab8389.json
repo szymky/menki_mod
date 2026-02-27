@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "menkimod:menki_ore": 1
+    },
+    "minecraft:used": {
+      "menkimod:menki_ore": 128
+    },
+    "minecraft:picked_up": {
+      "menkimod:menki_ore": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 173,
+      "minecraft:time_since_rest": 959,
+      "minecraft:walk_one_cm": 1417,
+      "minecraft:total_world_time": 1054,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 11824,
+      "minecraft:play_time": 959,
+      "minecraft:jump": 40,
+      "minecraft:time_since_death": 959,
+      "minecraft:drop": 1
+    }
+  },
+  "DataVersion": 4671
+}

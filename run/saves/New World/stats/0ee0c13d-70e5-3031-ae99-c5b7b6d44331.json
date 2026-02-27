@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "menkimod:suspicious_substance": 4
+    },
+    "minecraft:picked_up": {
+      "menkimod:suspicious_substance": 3
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 596,
+      "minecraft:time_since_rest": 916,
+      "minecraft:walk_one_cm": 2703,
+      "minecraft:total_world_time": 1263,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 16067,
+      "minecraft:crouch_one_cm": 157,
+      "minecraft:sneak_time": 21,
+      "minecraft:play_time": 916,
+      "minecraft:jump": 11,
+      "minecraft:time_since_death": 916,
+      "minecraft:drop": 4
+    }
+  },
+  "DataVersion": 4671
+}

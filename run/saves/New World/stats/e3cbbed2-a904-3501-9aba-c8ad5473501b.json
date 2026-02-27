@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "menkimod:menki_ore": 160
+    },
+    "minecraft:picked_up": {
+      "menkimod:suspicious_substance": 51,
+      "minecraft:iron_ingot": 37,
+      "minecraft:raw_iron": 27
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 2306,
+      "minecraft:time_since_rest": 4825,
+      "minecraft:walk_one_cm": 8098,
+      "minecraft:total_world_time": 5012,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 12029,
+      "minecraft:sneak_time": 52,
+      "minecraft:play_time": 4825,
+      "minecraft:jump": 32,
+      "minecraft:time_since_death": 4825
+    }
+  },
+  "DataVersion": 4671
+}
