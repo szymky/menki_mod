@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "menki_mod",
+  "version": "${version}",
+  "name": "menki_mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/menki_mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "de.menkicult.menki_mod.client.Menki_modDataGenerator"
+    ],
+    "client": [
+      "de.menkicult.menki_mod.client.Menki_modClient"
+    ],
+    "main": [
+      "de.menkicult.menki_mod.Menki_mod"
+    ]
+  },
+  "mixins": [
+    "menki_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
