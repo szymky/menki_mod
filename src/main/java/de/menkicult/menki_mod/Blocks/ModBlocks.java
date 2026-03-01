@@ -2,6 +2,7 @@ package de.menkicult.menki_mod.Blocks;
 
 import de.menkicult.menki_mod.Menki_mod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -10,10 +11,14 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
 
 import java.util.function.Function;
 
@@ -45,20 +50,30 @@ public class ModBlocks {
 
     public static final Block MENKI_ORE = register(
             "menki_ore",
-            Block::new,
+            MenkiOre::new,
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.STONE)
                     .strength(3.0f, 3.0f)
                     .requiresCorrectToolForDrops()
-                    .speedFactor(1.5f)
                     .sound(SoundType.STONE),
             true
     );
 
+    private static final ResourceKey<LootTable> MENKI_ORE_LOOT_TABLE_ID = MENKI_ORE.getLootTable().get();
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register((itemGroup) -> {
             itemGroup.accept(ModBlocks.MENKI_ORE.asItem());
+        });
+
+        LootTableEvents.MODIFY.register((resourceKey, builder, lootTableSource, provider) -> {
+            if (lootTableSource.isBuiltin() && MENKI_ORE_LOOT_TABLE_ID.equals(resourceKey)) {
+                LootPool.Builder poolBuilder = LootPool.lootPool();
+
+
+
+                builder.pool(poolBuilder.build());
+            }
         });
     }
 

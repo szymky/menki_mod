@@ -1,8 +1,0 @@
-/gamemode survival
-/gamemode creative
-/time set day
-/gamerule a
-/gamerule advance_time false
-/gamerule a
-/time set day
-/time set 6000
